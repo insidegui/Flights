@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FLMainWindowController">
+            <connections>
+                <outlet property="backgroundView" destination="tId-d7-jaW" id="TDd-XH-TWB"/>
+                <outlet property="containerView" destination="aNE-LB-Gqu" id="nKZ-9Q-ytY"/>
+                <outlet property="emptyImageView" destination="FB6-oU-tsU" id="M4L-bi-osj"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Flights" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="documentWindow" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
+            <rect key="contentRect" x="196" y="240" width="320" height="566"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="566"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <visualEffectView appearanceType="vibrantDark" blendingMode="behindWindow" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="tId-d7-jaW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="566"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="aNE-LB-Gqu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="502"/>
+                                <subviews>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FB6-oU-tsU">
+                                        <rect key="frame" x="124" y="215" width="72" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="1M6-Yf-JFI"/>
+                                            <constraint firstAttribute="height" constant="72" id="DcC-21-YAL"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="airplane" id="dAJ-m2-g3d"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FB6-oU-tsU" firstAttribute="centerX" secondItem="aNE-LB-Gqu" secondAttribute="centerX" id="6ck-jL-fUc"/>
+                                    <constraint firstItem="FB6-oU-tsU" firstAttribute="centerY" secondItem="aNE-LB-Gqu" secondAttribute="centerY" id="Owr-zG-DF1"/>
+                                </constraints>
+                            </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tec-7w-oQA">
+                                <rect key="frame" x="137" y="548" width="46" height="16"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Flights" id="PgP-mD-V2s">
+                                    <font key="font" metaFont="system" size="12"/>
+                                    <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tec-7w-oQA" firstAttribute="centerX" secondItem="tId-d7-jaW" secondAttribute="centerX" id="F8w-8c-IF0"/>
+                            <constraint firstItem="tec-7w-oQA" firstAttribute="top" secondItem="tId-d7-jaW" secondAttribute="top" constant="2" id="GoL-XQ-4XJ"/>
+                            <constraint firstItem="aNE-LB-Gqu" firstAttribute="top" secondItem="tId-d7-jaW" secondAttribute="top" constant="64" id="O3B-2M-mkj"/>
+                            <constraint firstItem="aNE-LB-Gqu" firstAttribute="leading" secondItem="tId-d7-jaW" secondAttribute="leading" id="hgF-kx-YsC"/>
+                            <constraint firstAttribute="bottom" secondItem="aNE-LB-Gqu" secondAttribute="bottom" id="sFC-X6-FHt"/>
+                            <constraint firstAttribute="trailing" secondItem="aNE-LB-Gqu" secondAttribute="trailing" id="uK4-cO-ACd"/>
+                        </constraints>
+                    </visualEffectView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tId-d7-jaW" secondAttribute="bottom" id="BVm-2a-tNM"/>
+                    <constraint firstAttribute="trailing" secondItem="tId-d7-jaW" secondAttribute="trailing" id="F1i-tY-PIO"/>
+                    <constraint firstItem="tId-d7-jaW" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="FWJ-SA-6Qd"/>
+                    <constraint firstItem="tId-d7-jaW" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="c0r-Xe-Ig5"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="420" y="594"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="airplane" width="33" height="17"/>
+    </resources>
+</document>

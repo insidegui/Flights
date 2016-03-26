@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDDDFBCB1CA60DE8004372ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDDFBCA1CA60DE8004372ED /* AppDelegate.m */; };
+		DDDDFBCE1CA60DE8004372ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDDFBCD1CA60DE8004372ED /* main.m */; };
+		DDDDFBD01CA60DE8004372ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDDFBCF1CA60DE8004372ED /* Assets.xcassets */; };
+		DDDDFBD31CA60DE8004372ED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDDFBD11CA60DE8004372ED /* MainMenu.xib */; };
+		DDDDFBDB1CA60DEF004372ED /* FlightUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDDFBDA1CA60DEF004372ED /* FlightUtilities.framework */; };
+		DDDDFBE31CA61325004372ED /* FLMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDDFBE11CA61325004372ED /* FLMainWindowController.m */; };
+		DDDDFBE41CA61325004372ED /* FLMainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDDFBE21CA61325004372ED /* FLMainWindowController.xib */; };
+		DDDDFBEA1CA6162E004372ED /* FLSearchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDDFBE81CA6162E004372ED /* FLSearchBarController.m */; };
+		DDDDFBEB1CA6162E004372ED /* FLSearchBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDDDFBE91CA6162E004372ED /* FLSearchBarController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDDDFBC61CA60DE8004372ED /* Flights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flights.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDDFBC91CA60DE8004372ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDDDFBCA1CA60DE8004372ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDDDFBCD1CA60DE8004372ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDDDFBCF1CA60DE8004372ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDDDFBD21CA60DE8004372ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DDDDFBD41CA60DE8004372ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDDFBDA1CA60DEF004372ED /* FlightUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlightUtilities.framework; path = ../../../../../System/Library/PrivateFrameworks/FlightUtilities.framework; sourceTree = "<group>"; };
+		DDDDFBDE1CA612EE004372ED /* FlightUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FlightUtilities.h; path = PrivateHeaders/FlightUtilities.h; sourceTree = "<group>"; };
+		DDDDFBE01CA61325004372ED /* FLMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLMainWindowController.h; path = Controllers/FLMainWindowController.h; sourceTree = "<group>"; };
+		DDDDFBE11CA61325004372ED /* FLMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLMainWindowController.m; path = Controllers/FLMainWindowController.m; sourceTree = "<group>"; };
+		DDDDFBE21CA61325004372ED /* FLMainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLMainWindowController.xib; path = Controllers/FLMainWindowController.xib; sourceTree = "<group>"; };
+		DDDDFBE71CA6162E004372ED /* FLSearchBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FLSearchBarController.h; path = Controllers/FLSearchBarController.h; sourceTree = "<group>"; };
+		DDDDFBE81CA6162E004372ED /* FLSearchBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FLSearchBarController.m; path = Controllers/FLSearchBarController.m; sourceTree = "<group>"; };
+		DDDDFBE91CA6162E004372ED /* FLSearchBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FLSearchBarController.xib; path = Controllers/FLSearchBarController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDDDFBC31CA60DE8004372ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDDFBDB1CA60DEF004372ED /* FlightUtilities.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDDDFBBD1CA60DE8004372ED = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBDA1CA60DEF004372ED /* FlightUtilities.framework */,
+				DDDDFBC81CA60DE8004372ED /* Flights */,
+				DDDDFBC71CA60DE8004372ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDDDFBC71CA60DE8004372ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBC61CA60DE8004372ED /* Flights.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDDDFBC81CA60DE8004372ED /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBE61CA6133A004372ED /* Bootstrap */,
+				DDDDFBE51CA6132A004372ED /* Resources */,
+				DDDDFBDF1CA6130D004372ED /* Controllers */,
+				DDDDFBDD1CA612DE004372ED /* PrivateHeaders */,
+				DDDDFBCC1CA60DE8004372ED /* Supporting Files */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		DDDDFBCC1CA60DE8004372ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBCD1CA60DE8004372ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDDDFBDD1CA612DE004372ED /* PrivateHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBDE1CA612EE004372ED /* FlightUtilities.h */,
+			);
+			name = PrivateHeaders;
+			sourceTree = "<group>";
+		};
+		DDDDFBDF1CA6130D004372ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBE01CA61325004372ED /* FLMainWindowController.h */,
+				DDDDFBE11CA61325004372ED /* FLMainWindowController.m */,
+				DDDDFBE71CA6162E004372ED /* FLSearchBarController.h */,
+				DDDDFBE81CA6162E004372ED /* FLSearchBarController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DDDDFBE51CA6132A004372ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBCF1CA60DE8004372ED /* Assets.xcassets */,
+				DDDDFBD41CA60DE8004372ED /* Info.plist */,
+				DDDDFBD11CA60DE8004372ED /* MainMenu.xib */,
+				DDDDFBE21CA61325004372ED /* FLMainWindowController.xib */,
+				DDDDFBE91CA6162E004372ED /* FLSearchBarController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DDDDFBE61CA6133A004372ED /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				DDDDFBC91CA60DE8004372ED /* AppDelegate.h */,
+				DDDDFBCA1CA60DE8004372ED /* AppDelegate.m */,
+			);
+			name = Bootstrap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDDDFBC51CA60DE8004372ED /* Flights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDDFBD71CA60DE8004372ED /* Build configuration list for PBXNativeTarget "Flights" */;
+			buildPhases = (
+				DDDDFBC21CA60DE8004372ED /* Sources */,
+				DDDDFBC31CA60DE8004372ED /* Frameworks */,
+				DDDDFBC41CA60DE8004372ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flights;
+			productName = Flights;
+			productReference = DDDDFBC61CA60DE8004372ED /* Flights.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDDDFBBE1CA60DE8004372ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Guilherme Rambo";
+				TargetAttributes = {
+					DDDDFBC51CA60DE8004372ED = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = DDDDFBC11CA60DE8004372ED /* Build configuration list for PBXProject "Flights" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDDDFBBD1CA60DE8004372ED;
+			productRefGroup = DDDDFBC71CA60DE8004372ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDDDFBC51CA60DE8004372ED /* Flights */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDDDFBC41CA60DE8004372ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDDFBD01CA60DE8004372ED /* Assets.xcassets in Resources */,
+				DDDDFBD31CA60DE8004372ED /* MainMenu.xib in Resources */,
+				DDDDFBE41CA61325004372ED /* FLMainWindowController.xib in Resources */,
+				DDDDFBEB1CA6162E004372ED /* FLSearchBarController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDDDFBC21CA60DE8004372ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDDDFBCE1CA60DE8004372ED /* main.m in Sources */,
+				DDDDFBCB1CA60DE8004372ED /* AppDelegate.m in Sources */,
+				DDDDFBE31CA61325004372ED /* FLMainWindowController.m in Sources */,
+				DDDDFBEA1CA6162E004372ED /* FLSearchBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDDDFBD11CA60DE8004372ED /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDDDFBD21CA60DE8004372ED /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDDDFBD51CA60DE8004372ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DDDDFBD61CA60DE8004372ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DDDDFBD81CA60DE8004372ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = Flights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.guilhermerambo.Flights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDDDFBD91CA60DE8004372ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = Flights/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.guilhermerambo.Flights;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDDDFBC11CA60DE8004372ED /* Build configuration list for PBXProject "Flights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDDFBD51CA60DE8004372ED /* Debug */,
+				DDDDFBD61CA60DE8004372ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDDDFBD71CA60DE8004372ED /* Build configuration list for PBXNativeTarget "Flights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDDDFBD81CA60DE8004372ED /* Debug */,
+				DDDDFBD91CA60DE8004372ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDDDFBBE1CA60DE8004372ED /* Project object */;
+}
