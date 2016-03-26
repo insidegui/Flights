@@ -2,6 +2,8 @@
 
 Simple flight information tracker for OS X.
 
+[Download Latest Release](https://github.com/insidegui/Flights/raw/master/Releases/flights_latest.zip)
+
 This is a toy project made in half an hour to demonstrate what can be done with Apple's `FlightUtilities` private framework 😁
 
 ![screenshot](https://raw.githubusercontent.com/insidegui/Flights/master/Resources/screenshot.png)
